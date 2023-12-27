@@ -1,3 +1,4 @@
 src/build/
 Jupyter_notebooks/.ipynb_checkpoints/
 src/WBGT.html
+src/*.so

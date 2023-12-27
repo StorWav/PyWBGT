@@ -7,8 +7,10 @@ ext_modules = [
 	"WBGT",
         ["WBGT.pyx"],
         # libraries=["m"],
-        extra_compile_args=['-qopenmp','-Ofast'],
-        extra_link_args=['-qopenmp'],
+        # extra_compile_args=['-qopenmp','-Ofast'],
+        # extra_link_args=['-qopenmp'],
+        extra_compile_args=['-fopenmp','-Ofast'],
+        extra_link_args=['-fopenmp'],
         define_macros=[("NPY_NO_DEPRECATED_API", "NPY_1_7_API_VERSION")],
     )
 ]
